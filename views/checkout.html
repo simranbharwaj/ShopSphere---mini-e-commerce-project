@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Checkout</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+
+<body>
+
+  <div class="auth-container">
+
+    <form
+      class="auth-form"
+      id="checkoutForm"
+    >
+
+      <h2>Checkout</h2>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+        required
+      />
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
+
+      <textarea
+        id="address"
+        placeholder="Shipping Address"
+        rows="5"
+        required
+      ></textarea>
+
+      <h3 id="checkoutTotal">
+        Total: ₹0
+      </h3>
+
+      <button type="submit">
+        Place Order
+      </button>
+
+    </form>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="/js/toast.js"></script>
+  <script src="/js/checkout.js"></script>
+
+</body>
+</html>
